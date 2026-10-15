@@ -223,33 +223,33 @@ email addresses, or other raw output are intentionally not embedded.
 **Gender distribution.** The screenshot shows 15 respondents labeled F and 30
 labeled H (45 records in total).
 
-![Gender distribution from R output](./Captures%20d'%C3%A9cran%20R%20Script/26.jpeg)
+![Gender distribution from R output](./assets/R%20Script%20Screenshoots/26.jpeg)
 
 **Engineering-field distribution.** Computer Science is the largest displayed
 category, followed by Networks and Telecoms and Industry.
 
-![Engineering-field distribution from R output](./Captures%20d'%C3%A9cran%20R%20Script/27.jpeg)
+![Engineering-field distribution from R output](./assets/R%20Script%20Screenshoots/27.jpeg)
 
 **Age boxplot before data cleaning.** The unusually large values in this
 screenshot are shown as they appear in the original R output; they should not
 be interpreted as valid respondent ages.
 
-![Age boxplot before cleaning](./Captures%20d'%C3%A9cran%20R%20Script/28.jpeg)
+![Age boxplot before cleaning](./assets/R%20Script%20Screenshoots/28.jpeg)
 
 **Year-of-study distribution.** The chart displays 40 students in CI1 and 5 in
 CI2.
 
-![Year-of-study distribution from R output](./Captures%20d'%C3%A9cran%20R%20Script/29.jpeg)
+![Year-of-study distribution from R output](./assets/R%20Script%20Screenshoots/29.jpeg)
 
 **Age distribution after the script's treatment.** The supplied histogram
 shows most observations at ages 20–22 and a single observation at age 25.
 
-![Age distribution from R output](./Captures%20d'%C3%A9cran%20R%20Script/30.jpeg)
+![Age distribution from R output](./assets/R%20Script%20Screenshoots/30.jpeg)
 
 **Age boxplot after the script's treatment.** The screenshot still displays an
 observation at age 25 beyond the upper whisker.
 
-![Age boxplot after treatment](./Captures%20d'%C3%A9cran%20R%20Script/31.jpeg)
+![Age boxplot after treatment](./assets/R%20Script%20Screenshoots/31.jpeg)
 
 ## Limitations and interpretation notes
 
