@@ -33,7 +33,7 @@ The project formulates three main hypotheses:
 
 | Path | Description |
 | --- | --- |
-| `Dataset.xlsx` (local-only) | Survey source workbook used by the quantitative analysis. It is not included because the report indicates that the source data contains respondent contact information. |
+| `Fichier pour le projet Excel.xlsx` (local-only) | Survey source workbook used by the quantitative analysis. It is not included because the report indicates that the source data contains respondent contact information. |
 | [`script.R`](./script.R) | Survey preprocessing, descriptive summaries, assumption checks, reliability analysis, and hypothesis tests. |
 | [`Saturation with Cosine Similarity/`](./Saturation%20with%20Cosine%20Similarity/) | Text-response similarity analysis. The analysis script is included; its raw workbook and screenshots are kept local because they may contain respondent data. |
 
@@ -123,94 +123,94 @@ of 53% and from the survey hypothesis tests.
 
 ### Conceptual framework and study design
 
-**Figure 1. Theoretical conceptual model (printed page 6).**
+**Figure 1. Theoretical conceptual model.**
 
 ![Figure 1: Theoretical conceptual model](./assets/report-figures/figure-01.png)
 
-**Figure 3. Word cloud based on saturation (printed page 13).**
+**Figure 3. Word cloud based on saturation.**
 
 ![Figure 3: Word cloud based on saturation](./assets/report-figures/figure-03.jpg)
 
-**Figure 4. Contextualized conceptual model (printed page 24).**
+**Figure 4. Contextualized conceptual model.**
 
 ![Figure 4: Contextualized conceptual model](./assets/report-figures/figure-04.png)
 
-**Figure 5. Google Form used for data collection (printed page 28).**
+**Figure 5. Google Form used for data collection.**
 
 ![Figure 5: Google Form survey](./assets/report-figures/figure-05.png)
 
-**Figure 6. Sampling calculator output (printed page 28).** The report's
+**Figure 6. Sampling calculator output.** The report's
 sampling narrative specifies population 904 and 80% confidence, whereas this
 calculator screenshot displays 900 and 85%; both report a sample size of 40.
 
 ![Figure 6: Sampling calculator](./assets/report-figures/figure-06.png)
 
-**Figure 7. Data importation with `readxl` (printed page 29).**
+**Figure 7. Data importation with `readxl`.**
 
 ![Figure 7: Importing the survey data](./assets/report-figures/figure-07.png)
 
 
 ### Data preparation and reliability
 
-**Figure 9. Item-column conversion (printed page 32).**
+**Figure 9. Item-column conversion.**
 
 ![Figure 9: Item-column conversion](./assets/report-figures/figure-09.png)
 
-**Figure 10. Converted item headers (printed page 32).**
+**Figure 10. Converted item headers**
 
 ![Figure 10: Converted item headers](./assets/report-figures/figure-10.png)
 
-**Figure 11. Qualitative-value conversion (printed page 33).**
+**Figure 11. Qualitative-value conversion.**
 
 ![Figure 11: Qualitative-value conversion](./assets/report-figures/figure-11.png)
 
-**Figure 12. Converted qualitative-value headers (printed page 33).**
+**Figure 12. Converted qualitative-value headers.**
 
 ![Figure 12: Converted qualitative-value headers](./assets/report-figures/figure-12.png)
 
-**Figure 13. Boxplot of age before outlier treatment (printed page 33).**
+**Figure 13. Boxplot of age before outlier treatment.**
 
 ![Figure 13: Age boxplot before treatment](./assets/report-figures/figure-13.jpg)
 
-**Figure 14. Updated age boxplot (printed page 34).**
+**Figure 14. Updated age boxplot.**
 
 ![Figure 14: Updated age boxplot](./assets/report-figures/figure-14.jpg)
 
-**Figure 15. Normality test output (printed page 34).**
+**Figure 15. Normality test output.**
 
 ![Figure 15: Normality test output](./assets/report-figures/figure-15.png)
 
-**Figure 16. Reliability analysis output (printed page 35).**
+**Figure 16. Reliability analysis output.**
 
 ![Figure 16: Reliability analysis output](./assets/report-figures/figure-16.png)
 
-**Figure 17. Variables information (printed page 35).**
+**Figure 17. Variables information.**
 
 ![Figure 17: Variables information](./assets/report-figures/figure-17.png)
 
 ### Hypothesis tests
 
-**Figure 18. Age and employability (printed page 36).**
+**Figure 18. Age and employability.**
 
 ![Figure 18: Age and employability](./assets/report-figures/figure-18.png)
 
-**Figure 19. Gender and employability (printed page 36).**
+**Figure 19. Gender and employability.**
 
 ![Figure 19: Gender and employability](./assets/report-figures/figure-19.png)
 
-**Figure 20. Year of study and employability (printed page 37).**
+**Figure 20. Year of study and employability.**
 
 ![Figure 20: Year of study and employability](./assets/report-figures/figure-20.png)
 
-**Figure 21. Skills and employability (printed page 37).**
+**Figure 21. Skills and employability.**
 
 ![Figure 21: Skills and employability](./assets/report-figures/figure-21.png)
 
-**Figure 22. University education and employability (printed page 38).**
+**Figure 22. University education and employability.**
 
 ![Figure 22: University education and employability](./assets/report-figures/figure-22.png)
 
-**Figure 23. Professional network and employability (printed page 38).**
+**Figure 23. Professional network and employability.**
 
 ![Figure 23: Professional network and employability](./assets/report-figures/figure-23.png)
 
@@ -250,26 +250,6 @@ shows most observations at ages 20–22 and a single observation at age 25.
 observation at age 25 beyond the upper whisker.
 
 ![Age boxplot after treatment](./Captures%20d'%C3%A9cran%20R%20Script/31.jpeg)
-
-## Running the analysis
-
-The quantitative analysis is written in R. It uses `readxl`, `ggplot2`,
-`moments`, and `psych`; install any missing packages in R before running the
-script.
-
-1. Clone or download this repository and open an R session in the project
-   directory.
-2. Ensure `Dataset.xlsx` is available at the path used in the script. The
-   current script contains a machine-specific absolute path; update the
-   `read_excel(...)` call to the local workbook path before running it.
-3. Run `script.R` in an interactive R session. The script contains `View()`
-   calls and opens plots, so it is intended for an interactive environment.
-4. Run `SATURATION.R` separately from its project directory after checking its
-   input workbook path and installing the packages it imports.
-
-The original scripts were developed interactively and may need path and package
-adjustments on another machine. The README does not claim a clean, automated
-one-command run.
 
 ## Limitations and interpretation notes
 
